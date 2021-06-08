@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 100px 2px;
+}
+.button4 {border-radius: 12px;}
+
+div.a {
+  text-align: center;
+  font-size:50px;
+  font-style:normal;
+}
+.container {
+  height: 600px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+<div class="center">
+<p><button class="button button4" onclick="myFunction()">Bana tıkla</button></p>
+
+<div class="a" id="yazi">ilk yazi</div>
+<script> 
+function myFunction() {
+  var x = document.getElementById("yazi");
+  if (x.innerHTML === "ilk yazi") {
+    x.innerHTML = "ikinci yazi";
+  } else {
+    x.innerHTML = "ilk yazi";
+  }
+}
+</script>
+
+</body>
+</html>
